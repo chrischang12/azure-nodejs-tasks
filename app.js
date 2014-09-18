@@ -1,6 +1,5 @@
 var TaskList = require('./routes/tasklist');
-var taskList = new TaskList("mongodb://Nodejs-Tutorial:13PPQoflvkFnm7adpXnOC6Aw3G..ew5YdpjM0gmnAuU-@ds052827.mongolab.com:52827/Nodejs-Tutorial");
-//process.env.CUSTOMCONNSTR_MONGOLAB_URI);
+var taskList = new TaskList(process.env.MONGOLAB_URI);
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
